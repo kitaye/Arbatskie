@@ -3,14 +3,14 @@ body {
 }
 
 .wraper {
-  height: 1000px;
+  height: 100vh;
+  background: linear-gradient(to bottom, #c7c5b6 61.8%, #ecebe2 38%);
 }
 
 .main {
-background: url(images/logo.png);
-height: 65%;
-background-size: cover;
-margin-bottom: 50px;
+  background: url(images/logo.png) no-repeat center;
+  height: 100%;
+  margin-bottom: 50px;
 }
 
 .title, .subtitle {
