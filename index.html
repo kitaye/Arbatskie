@@ -14,7 +14,7 @@
       <div class="header__nav">
         <a href="#" class="header__nav-link">О нас</a>
         <a href="#" class="header__nav-link">Вакансии</a>
-        <a href="#" class="header__nav-link">Заказчики</a>
+        <a href="#" class="header__nav-link">Заказчикам</a>
         <a href="#" class="header__nav-link">Контакты</a>
       </div>
       <div class="header__callback">
@@ -24,15 +24,112 @@
     </header>
     <main class="main">
       <div class="main__pic">
-        <p class="main__text">
-          КОЛЛ-ЦЕНТР ARBATSKIE LIFE <br>
+        <p class="main__pic-text">
+          <span class="main__pic-text-title">КОЛЛ-ЦЕНТР ARBATSKIE LIFE</span> <br>
           У нас работают люди <br>
           с самым разным опытом и интересами <br>
           и мы всегда находим то что нас <br>
           объединяет и делает крутой командой
         </p>
       </div>
+      <div class="main__description">
+        <p class="main__description-text">
+          <span class="main__description-text-title">Подход к работе</span> <br>
+          Мы являемся официальным представителем крупных российских брендов, по привлечению и обслуживанию клиентов в звонках и чатах. <br>
+          Ко всем нашим сотрудникам мы относимся пониманием и добротой, обучаем продуктам и специфике работы с нуля, постоянно развиваем и сопровождаем на всех этапах. <br>
+          При поиске менеджеров мы отдаем предпочтение внутреннему карьерному росту, чтобы человек был полностью погружен в свою работу и мог передать свой опыт и знания новым сотрудникам. <br>
+        </p>
+      </div>
+      <div class="main__article">
+        <p class="main__article-text">
+          <span class="main__article-text-title">Приходите к нам работать!</span> <br>
+          Вы любите работать и достойно зарабатывать? <br>
+          Умеете грамотно изъяснять мысли и как пользоваться компьютеро? <br>
+          Командная работа не пугает вас! Вы не стесняетесь перевыполнить план и получить премию! <br>
+          Вы коммуникабельны, общительны, энергичны и стрессоустойчивы? <br>
+          Слова инсполнительность и ответственность это не пустой звук для вас? <br>
+          <span class="main__article-text-title">Если вышеуказанные пункты не вызывают в вас противоречия, тогда заполняйте анкету!</span>
+        </p>
+        <div class="main__article-get-btn-wrap">
+          <button class="main__article-get-btn">Заполнить анкету</button>
+        </div>
+      </div>
     </main>
+      <div class="form-wrap">
+        <form action="#" class="form" id="form">
+          <h3 class="form__title">Анкета соискателя</h3>
+          <h4 class="form__subtitle">Личные данные</h4>
+          <div class="form__item">
+            <label for="formName" class="formlabel">Фамилия Имя Отчество*</label>
+            <input id="formName" type="text" name="name" class="form__input">
+          </div>
+          <div class="form__item">
+            <label for="formEmail" class="formlabel">E-mail*</label>
+            <input id="formEmail" type="text" name="email" class="form__input">
+          </div>
+          <div class="form__item">
+            <label for="formBirth" class="formlabel">Дата рождения*</label>
+            <input id="formBirth" type="text" name="birth" class="form__input">
+          </div>
+          <div class="form__item">
+            <label for="formPhone" class="formlabel">Мобильный телефон*</label>
+            <input id="formPhone" type="text" name="phone" class="form__input">
+          </div>
+          <div class="form__item">
+            <label for="formCity" class="formlabel">Город</label>
+            <input id="formCity" type="text" name="city" class="form__input">
+          </div>
+          <div class="form__item">
+            <h4 class="form__subtitle">Опыт в продажах*</h4>
+            <div class="options">
+              <div class="options__item">
+                <input type="radio" name="jobExp" class="options__input" id="gotExp" value="gotExp">
+                <label for="gotExp" class="options__label">Есть опыт</label>
+              </div>
+              <div class="options__item">
+                <input type="radio" checked name="jobExp" class="options__input" id="noExp" value="noExp">
+                <label for="noExp" class="options__label">Нет опыта</label>
+              </div>
+            </div>
+            <h4 class="form__subtitle">Пожелания по графику работы</h4>
+            <div class="options">
+              <div class="options__item">
+                <input type="radio" name="schedule" class="options__input" id="5-2" value="5-2">
+                <label for="5-2" class="options__label">5-2</label>
+              </div>
+              <div class="options__item">
+                <input type="radio" checked name="schedule" class="options__input" id="2-2" value="2-2">
+                <label for="2-2" class="options__label">2-2</label>
+              </div>
+              <div class="options__item">
+                <input type="radio" name="schedule" class="options__input" id="flex" value="flex">
+                <label for="flex" class="options__label">Свой график работы</label>
+              </div>
+            </div>
+          </div>
+          <div class="form__item">
+            <label for="formMessage" class="form__label">Сопроводительное письмо</label>
+            <textarea name="message" id="formMessage" class="form__input"></textarea>
+          </div>
+          <div class="form__item">
+            <div class="form__label">Прикрепить резюме</div>
+            <div class="file">
+              <div class="file__item">
+                <input id="formImage" type="file" name="image" class="file__input" accept=".doc, .pdf, .jpg">
+                <div class="file__button">Выбрать</div>
+              </div>
+              <div class="file__preview"></div>
+            </div>
+          </div>
+            <div class="form__item">
+              <div class="checkbox">
+                <input type="checkox" checked id="formAgreement" class="checkbox__input" name="agreement">
+                <label for="formAgreement" class="checkbox__label"><span>Я даю свое согласие на обработку персональных данных в соответствии с <a href="">Условиями</a>*</span>*</label>
+              </div>
+            </div>
+            <button type="submit" class="form__button">Отправить</button>
+          </form>
+      </div>
     <footer class="footer">
       <div class="footer__nav">
         <button class="footer__nav-btn">О нас</button>
@@ -43,7 +140,6 @@
       <div class="footer__about"></div>
       <div class="footer__vacancy">
         <h5 class="h5">Оператор Колл-Центра<h5>
-
       </div>
       <div class="footer__partners"></div>
       <div class="footer__contact"></div>

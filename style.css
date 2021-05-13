@@ -7,6 +7,8 @@ body {
   height: 127px;
   display: flex;
   background: linear-gradient(to bottom, #c7c5b6 75%, #ecebe2 100%);
+  position: fixed;
+  width: 100%;
 }
 
 .header__logo {
@@ -63,15 +65,77 @@ body {
   background-position: 100% 39%;
 }
 
-.main__text {
+.main__pic-text {
   text-align: end;
-  font-weight: 700;
   font-size: 30px;
-  color: #ecebe2;
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: #988476;
+  color: #000;
+  /* -webkit-text-stroke-width: 0.5px; */
+  /* -webkit-text-stroke-color: #988476; */
   margin: 0;
   padding: 140px 40px 0 0;
+}
+
+.main__pic-text-title, .main__description-text-title, .main__article-text-title {
+  font-weight: 800;
+  margin: 15px 0;
+  display: inline-block;
+  color: #ecebe2;
+  font-size: 39px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000;
+}
+
+.main__article-text-title {
+  margin: 50px;
+}
+
+.main__description {
+  background: url(images/desc.jpg) no-repeat center top;
+  background-size: 1176px 784px;
+  height: 620px;
+  background-position: 100% 39%;
+}
+
+.main__article {
+  background: url(images/article.jpg) no-repeat center top;
+  background-size: 1120px 748px;
+  height: 620px;
+  background-position: 100% 39%;
+}
+
+.main__description-text {
+  width: 30%;
+  /* font-weight: 700; */
+  font-size: 18px;
+  color: #000;
+  /* -webkit-text-stroke-width: 0.01px; */
+  /* -webkit-text-stroke-color: white; */
+  margin: 0;
+  padding: 122px 0 0 66px;
+}
+
+.main__article-text {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+  margin: 0;
+  padding: 68px 0 0 94px;
+}
+
+.main__article-get-btn {
+  padding: 13px;
+  border-radius: 25px;
+  /* width: 85%; */
+  /* margin: 0 auto; */
+  color: #988476;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.main__article-get-btn-wrap {
+  margin: 0 auto 50px;
+  width: max-content;
+
 }
 
 .footer {
@@ -98,4 +162,41 @@ body {
   font-size: 22px;
   color: #ecebe2;
   background-color: #988476;
+}
+
+.form {
+  min-width: 550px;
+  margin: 0 auto;
+  color: white;
+  padding: 30px 0;
+}
+
+.form__title {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+
+.form__item {
+  0 0 20px 0;
+}
+
+.form__label {
+  font-size: 18px;
+  display: block;
+  margin: 0 0 10px 0;
+}
+
+.form__input {
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.textarea.form__input {
+  min-height: 120px;
+  resize: vertical;
+  padding: 20px;
 }
