@@ -1,31 +1,77 @@
 body {
   margin: 0;
+  font-family: monospace;
 }
 
-.wraper {
-  height: 100vh;
-  background: linear-gradient(to bottom, #c7c5b6 61.8%, #ecebe2 38%);
+.header {
+  height: 127px;
+  display: flex;
+  background: linear-gradient(to bottom, #c7c5b6 75%, #ecebe2 100%);
+}
+
+.header__logo {
+  background: url(images/logo.png) no-repeat;
+  background-size: 185px 127px;
+  width: 20%;
+}
+
+.header__nav {
+  text-align: center;
+  background: #ecebe2;
+  margin: 0 auto;
+  font-weight: 700;
+  width: 60%;
+  padding: 50px 0;
+}
+
+.header__callback-btn {
+  padding: 13px;
+  border-radius: 25px;
+  width: 85%;
+  margin: 0 auto;
+  color: #988476;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.header__callback {
+  font-size: 20px;
+  font-weight: 700;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #ecebe2;
+}
+
+.header__nav-link {
+  text-decoration: none;
+  font-size: 20px;
+  color: #988476;
+  padding: 0 20px;
 }
 
 .main {
-  background: url(images/logo.png) no-repeat center;
-  height: 100%;
-  margin-bottom: 50px;
+  background: linear-gradient(to bottom, #ecebe2 0%, #c7c5b6 3%);
+  padding-top: 25px;
 }
 
-.title, .subtitle {
-  text-align: center;
-  font-family: monospace;
+.main__pic {
+  background: url(images/main.jpg) no-repeat center top;
+  background-size: 1440px 2160px;
+  height: 620px;
+  background-position: 100% 39%;
 }
 
-.main__title {
-  padding-top: 10px;
-  -webkit-text-stroke-width: 5px;
-  -webkit-text-stroke-color: #988476;
+.main__text {
+  text-align: end;
+  font-weight: 700;
+  font-size: 30px;
   color: #ecebe2;
-  font-size: 55px;
-  text-align: center;
-  font-family: monospace;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #988476;
+  margin: 0;
+  padding: 140px 40px 0 0;
 }
 
 .footer {
@@ -36,7 +82,7 @@ body {
 
 .footer__nav-btn {
   height: 50px;
-  border-radius: 10%;
+  border-radius: 5%;
   width: 150px;
   margin: 20px;
   color: #988476;
@@ -44,9 +90,12 @@ body {
   font-size: 20px;
   font-family: monospace;
   font-weight: 700;
+  outline: none;
 }
 
 .footer__nav-btn:hover {
   font-weight: 800;
   font-size: 22px;
+  color: #ecebe2;
+  background-color: #988476;
 }
