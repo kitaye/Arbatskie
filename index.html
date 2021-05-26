@@ -58,25 +58,24 @@
       <div class="form-wrap">
         <form action="#" class="form" id="form">
           <h3 class="form__title">Анкета соискателя</h3>
-          <h4 class="form__subtitle">Личные данные</h4>
           <div class="form__item">
-            <label for="formName" class="formlabel">Фамилия Имя Отчество*</label>
-            <input id="formName" type="text" name="name" class="form__input">
+            <label for="formName" class="form__label">Фамилия Имя Отчество*</label>
+            <input id="formName" type="text" name="name" class="form__input _req">
           </div>
           <div class="form__item">
-            <label for="formEmail" class="formlabel">E-mail*</label>
-            <input id="formEmail" type="text" name="email" class="form__input">
+            <label for="formEmail" class="form__label">E-mail*</label>
+            <input id="formEmail" type="text" name="email" class="form__input _req _email">
           </div>
           <div class="form__item">
-            <label for="formBirth" class="formlabel">Дата рождения*</label>
-            <input id="formBirth" type="text" name="birth" class="form__input">
+            <label for="formBirth" class="form__label">Дата рождения*</label>
+            <input id="formBirth" type="text" name="birth" class="form__input _req">
           </div>
           <div class="form__item">
-            <label for="formPhone" class="formlabel">Мобильный телефон*</label>
-            <input id="formPhone" type="text" name="phone" class="form__input">
+            <label for="formPhone" class="form__label">Мобильный телефон*</label>
+            <input id="formPhone" type="text" name="phone" class="form__input _req">
           </div>
           <div class="form__item">
-            <label for="formCity" class="formlabel">Город</label>
+            <label for="formCity" class="form__label">Город</label>
             <input id="formCity" type="text" name="city" class="form__input">
           </div>
           <div class="form__item">
@@ -108,41 +107,29 @@
             </div>
           </div>
           <div class="form__item">
-            <label for="formMessage" class="form__label">Сопроводительное письмо</label>
+            <label for="formMessage" class="form__subtitle">Сопроводительное письмо</label>
             <textarea name="message" id="formMessage" class="form__input"></textarea>
           </div>
           <div class="form__item">
-            <div class="form__label">Прикрепить резюме</div>
+            <div class="form__label form__subtitle">Прикрепить резюме</div>
             <div class="file">
               <div class="file__item">
                 <input id="formImage" type="file" name="image" class="file__input" accept=".doc, .pdf, .jpg">
                 <div class="file__button">Выбрать</div>
               </div>
-              <div class="file__preview"></div>
+              <div id="formPreview" class="file__preview"></div>
             </div>
           </div>
-            <div class="form__item">
-              <div class="checkbox">
-                <input type="checkox" checked id="formAgreement" class="checkbox__input" name="agreement">
-                <label for="formAgreement" class="checkbox__label"><span>Я даю свое согласие на обработку персональных данных в соответствии с <a href="">Условиями</a>*</span>*</label>
-              </div>
-            </div>
             <button type="submit" class="form__button">Отправить</button>
+            <p class="submit-title">Нажимая кнопку ОТПРАВИТЬ я даю согласие на обработку персональных данных</p>
           </form>
       </div>
     <footer class="footer">
-      <div class="footer__nav">
-        <button class="footer__nav-btn">О нас</button>
-        <button class="footer__nav-btn">Вакансии</button>
-        <button class="footer__nav-btn">Заказчикам</button>
-        <button class="footer__nav-btn">Контакты</button>
+      <h4 class="footer__title">© ARBATSKIE-LIFE 2021 ALL RIGHTS RESERVED</h4>
+      <div class="footer__link-container">
+        <a href="#" class="footer__link-vk"></a>
+        <a href="#" class="footer__link-inst"></a>
       </div>
-      <div class="footer__about"></div>
-      <div class="footer__vacancy">
-        <h5 class="h5">Оператор Колл-Центра<h5>
-      </div>
-      <div class="footer__partners"></div>
-      <div class="footer__contact"></div>
     </footer>
   </div>
 </body>
