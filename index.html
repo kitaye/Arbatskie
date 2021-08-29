@@ -145,15 +145,17 @@
       <form action="#" class="callbackForm" id="callbackForm">
         <span class="callbackForm__closeBtn"></span>
         <h3 class="callbackForm__title">ЗАКАЗАТЬ ЗВОНОК</h3>
-        <div class="callbackForm__item">
-          <label for="callbackName" class="callbackForm__label">Как к вам можно обращаться</label>
-          <input id="callbackFormName" type="text" name="callbackName" class="callbackForm__input _reqCallback">
+        <div class="callbackForm__item-wrap">
+          <div class="callbackForm__item">
+            <label for="callbackName" class="callbackForm__label">Как к вам можно обращаться</label>
+            <input id="callbackFormName" type="text" name="callbackName" class="callbackForm__input _reqCallback">
+          </div>
+          <div class="callbackForm__item">
+            <label for="callbackFormPhone" class="callbackForm__label">Ваш контактный номер телефона</label>
+            <input id="callbackFormPhone" type="text" name="callbackPhone" class="callbackForm__input _reqCallback">
+          </div>
+          <button type="submit" class="callbackForm__button">Жду звонка</button>
         </div>
-        <div class="callbackForm__item">
-          <label for="callbackFormPhone" class="callbackForm__label">Ваш контактный номер телефона</label>
-          <input id="callbackFormPhone" type="text" name="callbackPhone" class="callbackForm__input _reqCallback">
-        </div>
-        <button type="submit" class="callbackForm__button">Жду звонка</button>
         <p class="callbackForm__submitTitle">Нажимая кнопку ОТПРАВИТЬ я даю согласие на обработку персональных данных</p>
       </form>
     </div>

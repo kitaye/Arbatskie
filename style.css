@@ -642,4 +642,46 @@ textarea.form__input {
     font-size: 22px;
     padding: 15px;
   }
+
+  .callbackForm {
+    padding: 35px;
+  }
+
+  .callbackForm__input {
+    height: 30px;
+    padding: 3px 3px;
+    border-radius: 10px;
+    width: 75%;
+    font-size: 20px;
+    transition: all 0.5s ease 0s;
+    border: 1px solid;
+    margin: 0 auto;
+  }
+
+  .callbackForm__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .callbackForm__label {
+    text-align: center;
+  }
+
+  .callbackForm__button {
+    min-height: 50px;
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  .callbackForm {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 13px;
+  }
+
+  .callbackForm__title {
+    margin-top: 40px;
+  }
 }
